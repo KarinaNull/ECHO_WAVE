@@ -1065,4 +1065,250 @@ html, body {
   top: 100px;
 }
 
+.personal-acc-title {
+  margin-top: 36px;
+  font-size: 46px;
+  text-align: center;
+  font-family: "Abhaya Libre", serif;
+  font-weight: 500;
+  letter-spacing: 2%;
+}
+
+.star-personal-acc {
+  position: absolute;
+  top: 80px;
+  right: 400px;
+}
+
+.personal-acc-info {
+  display: flex;
+}
+.personal-acc-info .fio {
+  display: flex;
+  margin-left: 160px;
+  margin-top: 120px;
+}
+.personal-acc-info .fio .fio-img {
+  height: 110px;
+}
+.personal-acc-info .fio .ac-fio--email {
+  margin-top: 40px;
+  font-size: 32px;
+  text-align: center;
+  font-family: "Abhaya Libre", serif;
+  font-weight: 500;
+  margin-left: 38px;
+}
+.personal-acc-info .fio p {
+  margin-top: 30px;
+  font-size: 32px;
+  text-align: center;
+  font-family: "Abhaya Libre", serif;
+  font-weight: 500;
+  margin-left: 38px;
+}
+
+.req-acc {
+  position: absolute;
+  margin-left: 30px;
+}
+.req-acc--contact {
+  position: absolute;
+  margin-top: 20px;
+}
+
+.sq-acc {
+  z-index: 1;
+  position: absolute;
+  margin-top: 75px;
+}
+.sq-acc--contact {
+  z-index: 1;
+  position: absolute;
+  margin-top: 75px;
+  margin-top: 10px;
+}
+
+.stars-acc {
+  position: absolute;
+  left: 40px;
+  top: 640px;
+  z-index: 2;
+}
+.stars-acc--contact {
+  position: absolute;
+  left: 40px;
+  top: 1047px;
+  z-index: 2;
+}
+
+.personal-acc-test {
+  width: 639px;
+  color: black;
+  font-size: 30px;
+  font-family: "Abhaya Libre", serif;
+  z-index: 1;
+  position: relative;
+  margin-top: 300px;
+  margin-left: 480px;
+  margin-bottom: 140px;
+}
+.personal-acc-test--contact {
+  width: 922px;
+  color: black;
+  font-size: 30px;
+  font-family: "Abhaya Libre", serif;
+  z-index: 1;
+  position: relative;
+  margin-top: 196px;
+  margin-left: 414px;
+  margin-bottom: 140px;
+  text-align: right;
+}
+.personal-acc-test--contact .adress {
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.contacts-form {
+  margin-left: 54px;
+}
+.contacts-form .contact-text-group {
+  display: flex;
+}
+.contacts-form .contact-text-group .contact-title {
+  color: black;
+  font-size: 54px;
+  font-family: "Abhaya Libre", serif;
+  letter-spacing: 2%;
+  margin-right: 65px;
+  margin-top: 12px;
+}
+.contacts-form .contact-text {
+  margin-top: 10px;
+  width: 529px;
+  font-size: 20px;
+  text-align: left;
+  font-family: "Abhaya Libre", serif;
+  margin-bottom: 15px;
+}
+.contacts-form .forms .privat {
+  font-size: 20px;
+  text-align: left;
+  font-family: "Abhaya Libre", serif;
+  margin-top: 40px;
+  width: 642px;
+}
+.contacts-form .forms .first-gr {
+  display: flex;
+}
+.contacts-form .forms label {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: #454545;
+}
+.contacts-form .forms input[type=name],
+.contacts-form .forms input[type=phone],
+.contacts-form .forms input[type=surname] {
+  width: 300px;
+  padding: 10px;
+  min-height: 62px;
+  margin-bottom: 25px;
+  margin-right: 30px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+.contacts-form .forms input[type=name]:focus,
+.contacts-form .forms input[type=phone]:focus,
+.contacts-form .forms input[type=surname]:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.contacts-form .forms input[type=name]::placeholder,
+.contacts-form .forms input[type=phone]::placeholder,
+.contacts-form .forms input[type=surname]::placeholder {
+  color: #999;
+}
+.contacts-form .forms input[type=question] {
+  width: 639px;
+  padding: 10px;
+  min-height: 160px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+.contacts-form .forms input[type=question]:focus {
+  border-color: #97c0ec;
+  outline: none;
+  box-shadow: 0 0 5px rgba(101, 156, 214, 0.547);
+}
+.contacts-form .forms input[type=question]::placeholder {
+  color: #999;
+}
+.contacts-form .forms button[type=submit] {
+  margin-top: 16px;
+  padding: 10px 20px;
+  width: 200px;
+  height: 50px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 60px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.contacts-form .forms button[type=submit]:hover {
+  background-color: rgba(38, 38, 39, 0.5215686275);
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-info {
+  position: absolute;
+  top: 140px;
+  right: 80px;
+}
+.card-info section {
+  text-align: center;
+  align-content: center;
+  width: 350px;
+  height: 140px;
+  margin-bottom: 35px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.43);
+}
+.card-info section:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.card-info section h1, .card-info section h2 {
+  font-family: "Abhaya Libre", serif;
+  color: #333;
+  margin-bottom: 10px;
+}
+.card-info section p {
+  font-family: "Abhaya Libre", serif;
+  color: #666;
+  margin: 5px 0;
+}
+.card-info section img {
+  margin-right: 20px;
+}
+.card-info .dummy h1 {
+  font-family: "Abhaya Libre", serif;
+  font-size: 24px;
+}
+.card-info .email h2, .card-info .phone h2, .card-info .follow-us h2 {
+  font-family: "Abhaya Libre", serif;
+  font-size: 20px;
+}
+
 /*# sourceMappingURL=style.css.map */
