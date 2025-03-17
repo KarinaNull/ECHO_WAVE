@@ -904,6 +904,7 @@ html, body {
   margin-top: 10px;
 }
 .sign-form .login-container--signup form input[type=email],
+.sign-form .login-container--signup form input[type=text],
 .sign-form .login-container--signup form input[type=password] {
   width: 100%;
   padding: 10px;
@@ -914,12 +915,14 @@ html, body {
   transition: border-color 0.3s ease;
 }
 .sign-form .login-container--signup form input[type=email]:focus,
+.sign-form .login-container--signup form input[type=text]:focus,
 .sign-form .login-container--signup form input[type=password]:focus {
   border-color: #007bff;
   outline: none;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 .sign-form .login-container--signup form input[type=email]::placeholder,
+.sign-form .login-container--signup form input[type=text]::placeholder,
 .sign-form .login-container--signup form input[type=password]::placeholder {
   color: #999;
 }
@@ -959,7 +962,6 @@ html, body {
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-size: 12px;
-  margin-top: 18px;
 }
 .sign-form .login-container--signup .sign-up-block a {
   text-decoration: none;
@@ -1053,7 +1055,6 @@ html, body {
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-size: 12px;
-  margin-top: 18px;
 }
 .sign-form .login-container .sign-up-block a {
   text-decoration: none;

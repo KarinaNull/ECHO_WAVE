@@ -37,32 +37,27 @@
                 <div class="login-container--signup">
                     <p class="brand-sign">Echo Wave</p>
                     <p class="sign-title">Sign up</p>
-                    <form>
+                    <form action="register.php" method="POST">
                         <label for="email">Email address</label>
                         <input type="email" id="email" name="email" placeholder="johndoe@email.com" required>
 
-                        <label for="password">Name</label>
-                        <input type="password" id="password" name="password" placeholder="Name" required>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Name" required>
 
                         <label for="password">Password</label>
                         <input type="password" id="password" name="password" placeholder="Password" required>
 
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password" placeholder="Repeat the password" required>
+                        <label for="repeat_password">Repeat Password</label>
+                        <input type="password" id="repeat_password" name="repeat_password" placeholder="Repeat the password" required>
 
-
-                        <a href="./signin.php">Have account?</a>
                         <label>
-                            <input type="checkbox" name="terms"> By selecting Continue, you agree to our Terms of Service and acknowledge our Privacy Policy</a>.
+                            <input type="checkbox" name="terms" required> By selecting Continue, you agree to our Terms of Service and acknowledge our Privacy Policy.
                         </label>
 
                         <button type="submit">Continue</button>
-
-                        <hr>
-
                     </form>
                     <div class="sign-up-block">
-                        <p>You have account ECHO WAVE? <a class="a-sign" href="sign">Sign in</a></p>
+                        <p>You have account ECHO WAVE? <a class="a-sign" href="./signin.php">Sign in</a></p>
                     </div>
 
                 </div>

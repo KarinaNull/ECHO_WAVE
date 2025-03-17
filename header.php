@@ -5,7 +5,7 @@
             <li><a href="./AboutUS.php">About us </a></li>
             <li><a href="./catalog.php">Catalog</a></li>
             <li><a href="./Contacts.php">Contacts</a></li>
-            <a href="./signin.php"><img src="img/Acount.png"></a>
+            <a href="./personalAccount.php"><img src="img/Acount.png"></a>
         </ul>
     </div>
 </header>
