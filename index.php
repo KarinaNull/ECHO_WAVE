@@ -18,21 +18,8 @@
             <p class="text-welcome">Make some noise. Make some noise. Make some noise. Make some noise. Make some noise.
             </p>
         </div>
-        <header>
-            <div class="navbar">
-                <h1>Echo wave</h1>
-                <ul class="nav-list">
-                    <li><a href="#about">About us </a></li>
-                    <li><a href="#catalog">Catalog</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
-                    <a href="./acount.php"><img src="img/Acount.png"></a>
-                </ul>
-            </div>
-        </header>
 
-        <p class="under-head">
-            Make some noise.
-        </p>
+        <?php include 'header.php'; ?>
 
         <div class="start-block">
             <img class="star-big" src="img/Star 2.png">
@@ -49,7 +36,7 @@
                         offer a meticulously curated selection of guitars, keyboards, drums, and more, from renowned
                         brands
                         to exciting up-and-comers. </p>
-                    <a href="#" class="service-btn">LEARN MORE ABOUT OUR CONPANY</a>
+                    <a href="./AboutUS.php" class="service-btn">LEARN MORE ABOUT OUR CONPANY</a>
                 </div>
             </div>
             <img class="polygone2" src="img/Polygon2.png">
@@ -73,7 +60,7 @@
                     <p class="card-title">Accessories</p>
                     <p class="card-text">Gear Up. Essential accessories for every musician.
                     </p>
-                    <a href="#" class="card-btn">Explore the product range</a>
+                    <a href="./catalog.php" class="card-btn">Explore the product range</a>
                 </div>
             </div>
             <div class="list-product-card">
@@ -82,7 +69,7 @@
                     <p class="card-title">Electric & Bass Guitars</p>
                     <p class="card-text"> Find Your Perfect Sound. Explore our selection of electric and bass guitars.
                     </p>
-                    <a href="#" class="card-btn">Explore the product range</a>
+                    <a href="./catalog.php" class="card-btn">Explore the product range</a>
                 </div>
             </div>
             <div class="list-product-card">
@@ -91,7 +78,7 @@
                     <p class="card-title">Synthesizers</p>
                     <p class="card-text">Unleash Your Creativity. Keyboards and synthesizers for every style.
                     </p>
-                    <a href="#" class="card-btn">Explore the product range</a>
+                    <a href="./catalog.php" class="card-btn">Explore the product range</a>
                 </div>
             </div>
             <div class="list-product-card">
@@ -100,7 +87,7 @@
                     <p class="card-title">Drums & Percussion</p>
                     <p class="card-text">Keep the Beat. Drums, percussion, and everything in between.
                     </p>
-                    <a href="#" class="card-btn">Explore the product range</a>
+                    <a href="./catalog.php" class="card-btn">Explore the product range</a>
                 </div>
             </div>
         </div>
@@ -156,47 +143,7 @@
             </div>
         </div>
 
-        <footer>
-            <div class="footer-content">
-                <div class="footer-section-company-info">
-                    <p class="title-footer-section-company-info">NAVIGATION</p>
-                    <ul class="nav-list-footer">
-                        <li><a href="#about">About us </a></li>
-                        <li><a href="#catalog">Catalog</a></li>
-                        <li><a href="#contacts">Contacts</a></li>
-                        <li><a href="#mainPage">Main Page</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section-social">
-                    <p class="title-footer-section-social">SOCIAL NETWORK</p>
-                    <ul class="nav-list-footer-social">
-                        <li> <img src="img/Facebook.png"> <a href="#">Facebook</a></li>
-                        <li> <img src="img/Linkedin.png"> <a href="#">Linkedin</a></li>
-                        <li> <img src="img/Instagram.png"> <a href="#">Instagram</a></li>
-                        <li> <img src="img/Youtube.png"> <a href="#">Youtube</a></li>
-                        <li> <img src="img/Pintrest.png"> <a href="#">Pintrest</a></li>
-                    </ul>
-                </div>
-
-                <div class="parent-footer"></div>
-                <p class="thnx">Thanks for visiting! We're always happy to help. Contact us if you have any questions.
-                </p>
-
-            </div>
-            <p class="copy">Copyright © 2025 Echo Wave. All rights reserved.</p>
-            <div class="Company">
-                <img src="img/Body.png">
-                <p>Echo Wave</p>
-            </div>
-        </footer>
-    </div>
-
-    <div class="welckome-block">
-        <p class="text-welcome">Make some noise. Make some noise. Make some noise. Make some noise. Make some noise.
-        </p>
-    </div>
-
+        <?php include 'footer.php'; ?>
 
 
 </body>

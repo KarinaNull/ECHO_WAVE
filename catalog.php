@@ -18,21 +18,8 @@
             <p class="text-welcome">Make some noise. Make some noise. Make some noise. Make some noise. Make some noise.
             </p>
         </div>
-        <header>
-            <div class="navbar">
-                <h1>Echo wave</h1>
-                <ul class="nav-list">
-                    <li><a href="#about">About us </a></li>
-                    <li><a href="#catalog">Catalog</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
-                    <a href="./acount.php"><img src="img/Acount.png"></a>
-                </ul>
-            </div>
-        </header>
 
-        <p class="under-head">
-            Make some noise.
-        </p>
+        <?php include 'header.php'; ?>
 
         <div class="ElectricGuitar-content">
             <div class="content-end">
@@ -60,7 +47,7 @@
                         Orientation : right-hand side
                     </p>
                     <p class="card-price">400 $</p>
-                    <a href="#" class="card-btn">SUBMIT YOUR APPLICATION</a>
+                    <a href="./Contacts.php" class="card-btn">SUBMIT YOUR APPLICATION</a>
                 </div>
             </div>
             <div class="list-product-card">
@@ -71,7 +58,7 @@
                         Orientation : right-hand side
                     </p>
                     <p class="card-price">430 $</p>
-                    <a href="#" class="card-btn">SUBMIT YOUR APPLICATION</a>
+                    <a href="./Contacts.php" class="card-btn">SUBMIT YOUR APPLICATION</a>
                 </div>
             </div>
             <div class="list-product-card">
@@ -82,7 +69,7 @@
                         Neck mounting: bolts.
                     </p>
                     <p class="card-price">390 $</p>
-                    <a href="#" class="card-btn">SUBMIT YOUR APPLICATION</a>
+                    <a href="./Contacts.php" class="card-btn">SUBMIT YOUR APPLICATION</a>
                 </div>
             </div>
             <div class="list-product-card">
@@ -93,7 +80,7 @@
                         Neck mounting: bolts.
                     </p>
                     <p class="card-price">620 $</p>
-                    <a href="#" class="card-btn">SUBMIT YOUR APPLICATION</a>
+                    <a href="./Contacts.php" class="card-btn">SUBMIT YOUR APPLICATION</a>
                 </div>
             </div>
         </div>
@@ -107,7 +94,7 @@
                         Orientation : right-hand side
                     </p>
                     <p class="card-price">400 $</p>
-                    <a href="#" class="card-btn">SUBMIT YOUR APPLICATION</a>
+                    <a href="./Contacts.php" class="card-btn">SUBMIT YOUR APPLICATION</a>
                 </div>
             </div>
             <div class="list-product-card">
@@ -118,7 +105,7 @@
                         Orientation : right-hand side
                     </p>
                     <p class="card-price">430 $</p>
-                    <a href="#" class="card-btn">SUBMIT YOUR APPLICATION</a>
+                    <a href="./Contacts.php" class="card-btn">SUBMIT YOUR APPLICATION</a>
                 </div>
             </div>
             <div class="list-product-card">
@@ -129,7 +116,7 @@
                         Neck mounting: bolts.
                     </p>
                     <p class="card-price">390 $</p>
-                    <a href="#" class="card-btn">SUBMIT YOUR APPLICATION</a>
+                    <a href="./Contacts.php" class="card-btn">SUBMIT YOUR APPLICATION</a>
                 </div>
             </div>
             <div class="list-product-card">
@@ -140,7 +127,7 @@
                         Neck mounting: bolts.
                     </p>
                     <p class="card-price">620 $</p>
-                    <a href="#" class="card-btn">SUBMIT YOUR APPLICATION</a>
+                    <a href="./Contacts.php" class="card-btn">SUBMIT YOUR APPLICATION</a>
                 </div>
             </div>
         </div>
@@ -173,7 +160,7 @@
                         Regulators :4
                     </p>
                     <p class="card-price">400 $</p>
-                    <a href="#" class="card-btn">SUBMIT YOUR APPLICATION</a>
+                    <a href="./Contacts.php" class="card-btn">SUBMIT YOUR APPLICATION</a>
                 </div>
             </div>
             <div class="list-product-card">
@@ -184,7 +171,7 @@
                         Neck mounting.
                     </p>
                     <p class="card-price">430 $</p>
-                    <a href="#" class="card-btn">KORG KAOSS REPLAY</a>
+                    <a href="./Contacts.php" class="card-btn">KORG KAOSS REPLAY</a>
                 </div>
             </div>
             <div class="list-product-card">
@@ -195,7 +182,7 @@
                         Neck mounting.
                     </p>
                     <p class="card-price">390 $</p>
-                    <a href="#" class="card-btn">SUBMIT YOUR APPLICATION</a>
+                    <a href="./Contacts.php" class="card-btn">SUBMIT YOUR APPLICATION</a>
                 </div>
             </div>
             <div class="list-product-card">
@@ -206,7 +193,7 @@
                         Neck mounting.
                     </p>
                     <p class="card-price">620 $</p>
-                    <a href="#" class="card-btn">SUBMIT YOUR APPLICATION</a>
+                    <a href="./Contacts.php" class="card-btn">SUBMIT YOUR APPLICATION</a>
                 </div>
             </div>
         </div>
@@ -219,7 +206,7 @@
                         Regulators :4
                     </p>
                     <p class="card-price">400 $</p>
-                    <a href="#" class="card-btn">SUBMIT YOUR APPLICATION</a>
+                    <a href="./Contacts.php" class="card-btn">SUBMIT YOUR APPLICATION</a>
                 </div>
             </div>
             <div class="list-product-card">
@@ -230,7 +217,7 @@
                         Neck mounting.
                     </p>
                     <p class="card-price">430 $</p>
-                    <a href="#" class="card-btn">KORG KAOSS REPLAY</a>
+                    <a href="./Contacts.php" class="card-btn">KORG KAOSS REPLAY</a>
                 </div>
             </div>
             <div class="list-product-card">
@@ -241,7 +228,7 @@
                         Neck mounting.
                     </p>
                     <p class="card-price">390 $</p>
-                    <a href="#" class="card-btn">SUBMIT YOUR APPLICATION</a>
+                    <a href="./Contacts.php" class="card-btn">SUBMIT YOUR APPLICATION</a>
                 </div>
             </div>
             <div class="list-product-card">
@@ -252,7 +239,7 @@
                         Neck mounting.
                     </p>
                     <p class="card-price">620 $</p>
-                    <a href="#" class="card-btn">SUBMIT YOUR APPLICATION</a>
+                    <a href="./Contacts.php" class="card-btn">SUBMIT YOUR APPLICATION</a>
                 </div>
             </div>
         </div>
@@ -284,7 +271,7 @@
                         Orientation : right-hand side
                     </p>
                     <p class="card-price">400 $</p>
-                    <a href="#" class="card-btn">SUBMIT YOUR APPLICATION</a>
+                    <a href="./Contacts.php" class="card-btn">SUBMIT YOUR APPLICATION</a>
                 </div>
             </div>
             <div class="list-product-card">
@@ -295,7 +282,7 @@
                         Orientation : right-hand side
                     </p>
                     <p class="card-price">430 $</p>
-                    <a href="#" class="card-btn">SUBMIT YOUR APPLICATION</a>
+                    <a href="./Contacts.php" class="card-btn">SUBMIT YOUR APPLICATION</a>
                 </div>
             </div>
             <div class="list-product-card">
@@ -306,7 +293,7 @@
                         Neck mounting: bolts.
                     </p>
                     <p class="card-price">390 $</p>
-                    <a href="#" class="card-btn">SUBMIT YOUR APPLICATION</a>
+                    <a href="./Contacts.php" class="card-btn">SUBMIT YOUR APPLICATION</a>
                 </div>
             </div>
             <div class="list-product-card">
@@ -317,7 +304,7 @@
                         Neck mounting: bolts.
                     </p>
                     <p class="card-price">620 $</p>
-                    <a href="#" class="card-btn">SUBMIT YOUR APPLICATION</a>
+                    <a href="./Contacts.php" class="card-btn">SUBMIT YOUR APPLICATION</a>
                 </div>
             </div>
         </div>
@@ -331,7 +318,7 @@
                         Orientation : right-hand side
                     </p>
                     <p class="card-price">400 $</p>
-                    <a href="#" class="card-btn">SUBMIT YOUR APPLICATION</a>
+                    <a href="./Contacts.php" class="card-btn">SUBMIT YOUR APPLICATION</a>
                 </div>
             </div>
             <div class="list-product-card">
@@ -342,7 +329,7 @@
                         Orientation : right-hand side
                     </p>
                     <p class="card-price">430 $</p>
-                    <a href="#" class="card-btn">SUBMIT YOUR APPLICATION</a>
+                    <a href="./Contacts.php" class="card-btn">SUBMIT YOUR APPLICATION</a>
                 </div>
             </div>
             <div class="list-product-card">
@@ -353,7 +340,7 @@
                         Neck mounting: bolts.
                     </p>
                     <p class="card-price">390 $</p>
-                    <a href="#" class="card-btn">SUBMIT YOUR APPLICATION</a>
+                    <a href="./Contacts.php" class="card-btn">SUBMIT YOUR APPLICATION</a>
                 </div>
             </div>
             <div class="list-product-card">
@@ -364,7 +351,7 @@
                         Neck mounting: bolts.
                     </p>
                     <p class="card-price">390 $</p>
-                    <a href="#" class="card-btn">SUBMIT YOUR APPLICATION</a>
+                    <a href="./Contacts.php" class="card-btn">SUBMIT YOUR APPLICATION</a>
                 </div>
             </div>
         </div>
@@ -396,7 +383,7 @@
                         Orientation : right-hand side
                     </p>
                     <p class="card-price">400 $</p>
-                    <a href="#" class="card-btn">SUBMIT YOUR APPLICATION</a>
+                    <a href="./Contacts.php" class="card-btn">SUBMIT YOUR APPLICATION</a>
                 </div>
             </div>
             <div class="list-product-card">
@@ -407,7 +394,7 @@
                         Orientation : right-hand side
                     </p>
                     <p class="card-price">430 $</p>
-                    <a href="#" class="card-btn">SUBMIT YOUR APPLICATION</a>
+                    <a href="./Contacts.php" class="card-btn">SUBMIT YOUR APPLICATION</a>
                 </div>
             </div>
             <div class="list-product-card">
@@ -418,7 +405,7 @@
                         Neck mounting: bolts.
                     </p>
                     <p class="card-price">390 $</p>
-                    <a href="#" class="card-btn">SUBMIT YOUR APPLICATION</a>
+                    <a href="./Contacts.php" class="card-btn">SUBMIT YOUR APPLICATION</a>
                 </div>
             </div>
             <div class="list-product-card">
@@ -429,7 +416,7 @@
                         Neck mounting: bolts.
                     </p>
                     <p class="card-price">620 $</p>
-                    <a href="#" class="card-btn">SUBMIT YOUR APPLICATION</a>
+                    <a href="./Contacts.php" class="card-btn">SUBMIT YOUR APPLICATION</a>
                 </div>
             </div>
         </div>
@@ -442,46 +429,8 @@
                 you. Login to view your personalized offers.</p>
             <img class="rew-star-end" src="img/Star 7.png">
         </div>
-        <footer>
-            <div class="footer-content">
-                <div class="footer-section-company-info">
-                    <p class="title-footer-section-company-info">NAVIGATION</p>
-                    <ul class="nav-list-footer">
-                        <li><a href="#about">About us </a></li>
-                        <li><a href="#catalog">Catalog</a></li>
-                        <li><a href="#contacts">Contacts</a></li>
-                        <li><a href="#mainPage">Main Page</a></li>
-                    </ul>
-                </div>
 
-                <div class="footer-section-social">
-                    <p class="title-footer-section-social">SOCIAL NETWORK</p>
-                    <ul class="nav-list-footer-social">
-                        <li> <img src="img/Facebook.png"> <a href="#">Facebook</a></li>
-                        <li> <img src="img/Linkedin.png"> <a href="#">Linkedin</a></li>
-                        <li> <img src="img/Instagram.png"> <a href="#">Instagram</a></li>
-                        <li> <img src="img/Youtube.png"> <a href="#">Youtube</a></li>
-                        <li> <img src="img/Pintrest.png"> <a href="#">Pintrest</a></li>
-                    </ul>
-                </div>
-
-                <div class="parent-footer"></div>
-                <p class="thnx">Thanks for visiting! We're always happy to help. Contact us if you have any questions.
-                </p>
-
-            </div>
-            <p class="copy">Copyright © 2025 Echo Wave. All rights reserved.</p>
-            <div class="Company">
-                <img src="img/Body.png">
-                <p>Echo Wave</p>
-            </div>
-        </footer>
-    </div>
-
-    <div class="welckome-block">
-        <p class="text-welcome">Make some noise. Make some noise. Make some noise. Make some noise. Make some noise.
-        </p>
-    </div>
+        <?php include 'footer.php'; ?>
 
 </body>
 
