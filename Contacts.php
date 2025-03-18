@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -29,29 +30,66 @@
             <p class="contact-text">You can contact us directly or, for example, leave a request so that we can contact you and consider your question or place an order.</p>
 
             <div class="forms">
-
-                <div class="first-gr">
-                    <div class="name">
-                        <input type="name" id="name" name="name" placeholder="name" required>
+                <form id="contactForm">
+                    <div class="first-gr">
+                        <div class="name">
+                            <input type="text" id="name" name="name" placeholder="name" required>
+                        </div>
+                        <div class="surname">
+                            <input type="text" id="surname" name="surname" placeholder="surname" required>
+                        </div>
                     </div>
-                    <div class="surname">
-                        <input type="surname" id="surname" name="surname" placeholder="surname" required>
+
+                    <div class="phone">
+                        <input type="text" id="phone" name="phone" placeholder="Phone" required>
                     </div>
-                </div>
 
-                <div class="phone">
-                    <input type="phone" id="phone" name="phone" placeholder="Phone" required>
-                </div>
+                    <div class="question">
+                        <input type="text" id="question" name="question" placeholder="question" required>
+                    </div>
 
-                <div class="question">
-                    <input type="question" id="question" name="question" placeholder="question" required>
-                </div>
+                    <button type="submit">Send</button>
 
-                <button type="submit">Send</button>
-
-                <p class="privat">This site is protected by hCaptcha and the hCaptcha Privacy Policy and Terms of Service apply.</p>
+                    <p class="privat">This site is protected by hCaptcha and the hCaptcha Privacy Policy and Terms of Service apply.</p>
+                </form>
             </div>
 
+            <script>
+                document.getElementById('contactForm').addEventListener('submit', function(e) {
+                    e.preventDefault();
+
+                    const formData = new FormData(this);
+
+                    fetch('submit_form.php', {
+                            method: 'POST',
+                            body: formData
+                        })
+                        .then(response => response.json())
+                        .then(data => {
+                            if (data.status === 'error') {
+                                Swal.fire({
+                                    title: 'Внимание',
+                                    text: data.message,
+                                    footer: '<a href="./signin.php">Авторизоваться</a> или <a href="./signup.php">Зарегистрироваться</a>'
+                                });
+                            } else if (data.status === 'success') {
+                                Swal.fire({
+                                    icon: 'success',
+                                    title: 'Успех!',
+                                    text: data.message
+                                });
+                            }
+                        })
+                        .catch(error => {
+                            console.error('Ошибка:', error);
+                            Swal.fire({
+                                icon: 'error',
+                                title: 'Ошибка',
+                                text: 'Произошла ошибка при отправке формы.'
+                            });
+                        });
+                });
+            </script>
             <div class="card-info">
                 <section class="dummy">
                     <h1>Dummys</h1>

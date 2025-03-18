@@ -1224,6 +1224,7 @@ html, body {
 }
 .contacts-form .forms input[type=name],
 .contacts-form .forms input[type=phone],
+.contacts-form .forms input[type=text],
 .contacts-form .forms input[type=surname] {
   width: 300px;
   padding: 10px;
@@ -1237,6 +1238,7 @@ html, body {
 }
 .contacts-form .forms input[type=name]:focus,
 .contacts-form .forms input[type=phone]:focus,
+.contacts-form .forms input[type=text]:focus,
 .contacts-form .forms input[type=surname]:focus {
   border-color: #007bff;
   outline: none;
@@ -1244,6 +1246,7 @@ html, body {
 }
 .contacts-form .forms input[type=name]::placeholder,
 .contacts-form .forms input[type=phone]::placeholder,
+.contacts-form .forms input[type=text]::placeholder,
 .contacts-form .forms input[type=surname]::placeholder {
   color: #999;
 }
