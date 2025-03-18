@@ -1328,35 +1328,245 @@ html, body {
   font-size: 20px;
 }
 
-    .list-group-catalog {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-  }
+.content-admin {
+  padding: 20px;
+}
+.content-admin .table-button {
+  padding: 20px;
+  height: 60px;
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #D8E5FA;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  color: #333;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Abhaya Libre", serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-top: 42px;
+}
+.content-admin .table-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.content-admin .table-button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+}
 
+.personal-acc-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  justify-content: center;
+}
 
+.btn-logout,
+.btn-admin {
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  transition: all 0.3s ease;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-logout {
+  background-color: #ff4d4d;
+}
+
+.btn-logout:hover {
+  background-color: #e53935;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-logout:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-admin {
+  background-color: #4caf50;
+}
+
+.btn-admin:hover {
+  background-color: #3e8e41;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-admin:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.add-record-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  width: 80%;
+  margin-left: 30px;
+}
+.add-record-form label {
+  flex: 1 1 100%;
+  font-weight: bold;
+  color: #333;
+}
+.add-record-form input[type=text] {
+  flex: 1 1 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+.add-record-form input[type=text]:focus {
+  border-color: #4c8caf;
+  outline: none;
+}
+.add-record-form button {
+  padding: 10px 20px;
+  background-color: #4c8caf;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.add-record-form button:hover {
+  background-color: #4c8caf, 10%;
+}
+
+.data-table {
+  border-collapse: collapse;
+  margin-left: 52px;
+  margin-top: 30px;
+}
+.data-table thead {
+  background-color: rgba(139, 196, 202, 0.768627451);
+  color: white;
+}
+.data-table thead th {
+  padding: 12px;
+  text-align: left;
+}
+.data-table tbody tr td {
+  padding: 12px;
+  vertical-align: middle;
+}
+.data-table a {
+  text-decoration: none;
+  color: #4c8caf;
+  margin-right: 10px;
+}
+.data-table a:hover {
+  text-decoration: underline;
+}
+.data-table .delete-link {
+  color: #ff4d4d;
+}
+.data-table .delete-link:hover {
+  text-decoration: underline;
+}
+
+.delete-link {
+  color: #ff4d4d;
+}
+.delete-link:hover {
+  text-decoration: underline;
+}
+
+.edit {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 70%;
+  margin-left: 30px;
+  margin-top: 52px;
+  font-family: "Abhaya Libre", serif;
+  font-weight: 500;
+}
+.edit label {
+  font-weight: bold;
+  color: #333;
+}
+.edit input[type=text] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+.edit input[type=text]:focus {
+  border-color: #4c8caf;
+  outline: none;
+}
+.edit input[type=hidden] {
+  display: none;
+}
+.edit button {
+  padding: 10px;
+  background-color: #4c8caf;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.edit button:hover {
+  background-color: rgb(60.5577689243, 111.5537848606, 139.4422310757);
+}
+
+.error-message {
+  color: #ff4d4d;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.list-group-catalog {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.list-product-card {
+  width: calc(25% - 20px);
+  box-sizing: border-box;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 1200px) {
   .list-product-card {
-      width: calc(25% - 20px);
-      box-sizing: border-box;
+    width: calc(33.33% - 20px);
   }
+}
+@media (max-width: 900px) {
+  .list-product-card {
+    width: calc(50% - 20px);
+  }
+}
+@media (max-width: 600px) {
+  .list-product-card {
+    width: 100%;
+  }
+}
 
-  /* Адаптация для мобильных устройств */
-  @media (max-width: 1200px) {
-      .list-product-card {
-          width: calc(33.33% - 20px);
-      }
-  }
-
-  @media (max-width: 900px) {
-      .list-product-card {
-          width: calc(50% - 20px);
-      }
-  }
-
-  @media (max-width: 600px) {
-      .list-product-card {
-          width: 100%;
-      }
-  }
 /*# sourceMappingURL=style.css.map */

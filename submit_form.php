@@ -2,7 +2,7 @@
 session_start();
 
 if (!isset($_SESSION['user_id'])) {
-    echo json_encode(['status' => 'error', 'message' => 'Для продолжения работы требуется авторизация']);
+    echo json_encode(['status' => 'error', 'message' => 'Authorization is required to continue working.']);
     exit();
 }
 
@@ -27,9 +27,9 @@ $stmt = $conn->prepare("INSERT INTO user_requests (name, surname, phone, questio
 $stmt->bind_param("ssssi", $name, $surname, $phone, $question, $user_id);
 
 if ($stmt->execute()) {
-    echo json_encode(['status' => 'success', 'message' => 'Заявка успешно отправлена!']);
+    echo json_encode(['status' => 'success', 'message' => 'The application has been successfully submitted!']);
 } else {
-    echo json_encode(['status' => 'error', 'message' => 'Ошибка: ' . $stmt->error]);
+    echo json_encode(['status' => 'error', 'message' => 'Error: ' . $stmt->error]);
 }
 
 $stmt->close();

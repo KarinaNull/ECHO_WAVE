@@ -68,14 +68,14 @@
                         .then(data => {
                             if (data.status === 'error') {
                                 Swal.fire({
-                                    title: 'Внимание',
+                                    title: 'Attention',
                                     text: data.message,
-                                    footer: '<a href="./signin.php">Авторизоваться</a> или <a href="./signup.php">Зарегистрироваться</a>'
+                                    footer: '<a href="./signin.php">Sign in</a> или <a href="./signup.php">Register</a>'
                                 });
                             } else if (data.status === 'success') {
                                 Swal.fire({
                                     icon: 'success',
-                                    title: 'Успех!',
+                                    title: 'Success!',
                                     text: data.message
                                 });
                             }
@@ -84,8 +84,8 @@
                             console.error('Ошибка:', error);
                             Swal.fire({
                                 icon: 'error',
-                                title: 'Ошибка',
-                                text: 'Произошла ошибка при отправке формы.'
+                                title: 'Error',
+                                text: 'An error occurred when submitting the form.'
                             });
                         });
                 });

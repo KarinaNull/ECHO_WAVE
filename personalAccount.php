@@ -1,6 +1,7 @@
 <?php
 session_start();
 
+// Проверяем, авторизован ли пользователь
 if (!isset($_SESSION['user_id'])) {
     header("Location: signup.php");
     exit();
@@ -8,6 +9,7 @@ if (!isset($_SESSION['user_id'])) {
 
 $user_name = $_SESSION['user_name'];
 $user_email = $_SESSION['user_email'];
+$user_role = $_SESSION['role'] ?? 'user'; // Получаем роль пользователя (по умолчанию 'user')
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -45,6 +47,14 @@ $user_email = $_SESSION['user_email'];
                 <img class="fio-img" src="img/email.png">
                 <p class="ac-fio--email">Email: <?php echo htmlspecialchars($user_email); ?></p>
             </div>
+        </div>
+
+        <div class="personal-acc-buttons">
+            <a href="logout.php" class="btn-logout">Logout</a>
+
+            <?php if ($user_role === 'admin'): ?>
+                <a href="admin_dashboard.php" class="btn-admin">Admin Dashboard</a>
+            <?php endif; ?>
         </div>
 
         <img class="req-acc" src="img/image.png">

@@ -103,16 +103,16 @@ if (isset($_SESSION['error'])) {
                 .then(data => {
                     if (data.status === 'success') {
                         Swal.fire({
-                            title: 'Успех!',
+                            title: 'Success!',
                             text: data.message,
                             icon: 'success',
                             confirmButtonText: 'ОК'
                         }).then(() => {
-                            window.location.href = 'personalAccount.php'; // Переадресация на личный кабинет
+                            window.location.href = data.redirect;
                         });
                     } else {
                         Swal.fire({
-                            title: 'Ошибка!',
+                            title: 'Error!',
                             text: data.message,
                             icon: 'error',
                             confirmButtonText: 'ОК'
@@ -120,7 +120,7 @@ if (isset($_SESSION['error'])) {
                     }
                 })
                 .catch(error => {
-                    console.error('Ошибка:', error);
+                    console.error('Error: ', error);
                 });
         });
     </script>
